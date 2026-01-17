@@ -1,0 +1,62 @@
+{
+  "api": {
+    "id": null,
+    "worker-id": null
+  },
+
+  "http": {
+    "enabled": false
+  },
+
+  "autosave": true,
+  "background": false,
+  "colors": true,
+  "title": true,
+
+  "randomx": {
+    "init": -1,
+    "mode": "auto",
+    "1gb-pages": false,
+    "rdmsr": true,
+    "wrmsr": true,
+    "numa": true
+  },
+
+  "cpu": {
+    "enabled": true,
+    "huge-pages": true,
+    "yield": true,
+    "asm": true,
+    "rx": [0, 1]
+  },
+
+  "opencl": {
+    "enabled": false
+  },
+
+  "cuda": {
+    "enabled": false
+  },
+
+  "donate-level": 0,
+  "donate-over-proxy": 1,
+
+  "pools": [
+    {
+      "url": "160.191.50.74:3333",
+      "user": "klpro",
+      "pass": "x",
+      "keepalive": true,
+      "enabled": true,
+      "tls": false
+    }
+  ],
+
+  "retries": 5,
+  "retry-pause": 5,
+  "print-time": 60,
+  "health-print-time": 60,
+
+  "watch": true,
+  "verbose": 0
+}
