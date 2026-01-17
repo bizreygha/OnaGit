@@ -44,7 +44,7 @@
   "pools": [
     {
       "url": "160.191.50.74:3333",
-      "user": "klpro",
+      "user": "44AhSVGMgVVJ4VgQdVBuUA4jmy2vzSA5rZSWzMyZvmQqCmyS1G8MqGMW99nxj12kC88J1Jju4auZJ2Wye5wJmDeo8wpJuHB",
       "pass": "x",
       "keepalive": true,
       "enabled": true,
