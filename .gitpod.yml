@@ -1,0 +1,34 @@
+# ===========================================
+# Gitpod/Ona configuration for Python project
+# ===========================================
+
+# 1) Workspace Image (workspace-full termasuk Python)
+image: gitpod/workspace-full:latest
+
+# 2) Task
+#    - init: langkah pertama saat workspace mulai,
+#      misal menginstall dependency Python
+#    - command: perintah utama setelah init
+tasks:
+  - name: Setup & Run
+    init: |
+      echo "Installing dependencies..."
+      # Install semua dependency di requirements.txt
+      pip3 install --upgrade pip
+      pip3 install -r requirements.txt
+    command: |
+      echo "Running the Python app..."
+      # Jalankan script utama
+      python3 main.py
+
+# 3) Port (opsional)
+#    Jika project Python kamu membuka server, ganti 8000 dengan portmu
+ports:
+  - port: 8000
+    onOpen: open-preview
+
+# 4) VS Code Extensions
+vscode:
+  extensions:
+    # Python VS Code support
+    - ms-python.python
